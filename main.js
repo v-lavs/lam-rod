@@ -58,4 +58,29 @@ jQuery(document).ready(function ($) {
     smoothScrollToAnchor('#requestDemo');
     smoothScrollToAnchor('.header .menu__link');
 
+
+    /**
+     * SIMPLE FANSYBOX FOR IMAGES
+     */
+    $('.gallery__thumb').fancybox({
+
+    });
+
+
+    /**
+     * GALLERY PARALLAX
+     */
+    var $contentWrap = $('.content-with-gallery');
+    var $galleryWrap = $('.gallery').get(0);
+    var $galleryStrip = $('.gallery-list');
+
+    $(document).on('scroll', function () {
+        var contentHeight = $contentWrap.height();
+        var boundingGalleryWrap = $galleryWrap.getBoundingClientRect();
+        var topGalleryOffset = boundingGalleryWrap.top;
+        // var bottomGalleryOffset = topGalleryOffset + boundingGalleryWrap.height;
+        var offsetY = topGalleryOffset < 0 ? topGalleryOffset : 0;
+
+        $galleryStrip.css({transform: 'translate3d(0,'+ offsetY +'px , 0)'});
+    });
 });
