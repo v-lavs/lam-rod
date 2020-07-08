@@ -822,6 +822,10 @@ body {
   .step-work__item .decor:before {
     right: 12px;
   }
+  .footer {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
