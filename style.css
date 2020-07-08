@@ -801,7 +801,9 @@ body {
   .container {
     max-width: 90%;
   }
-
+.main{
+  padding-top: 6.43rem;
+}
   .icon {
     width: 80%;
     padding-top: 85%;
@@ -835,6 +837,10 @@ body {
   .link-mail {
     margin-bottom: 1.15rem;
     font-size: 1.15rem;
+  }
+  .section-banner {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .dynamic-content h3 {
