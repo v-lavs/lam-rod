@@ -734,9 +734,6 @@ body {
     padding-left: 0;
   }
 
-  .section__title {
-    padding-left: 45px;
-  }
 
   .section__title:before {
     left: 0;
