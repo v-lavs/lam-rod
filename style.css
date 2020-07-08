@@ -103,7 +103,6 @@ body {
 }
 
 .dynamic-content p {
-  font-size: 20px;
   font-family: ArialMT, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -546,18 +545,28 @@ body {
     border-width: 14px 0 14px 25.7px;
   }
 
+  .section__title {
+    font-size: 3.25rem;
+  }
+
   .footer {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-
-@media only screen and (max-width: 1480px) {
+@media only screen and (max-width: 1660px) {
   body {
     font-size: 16px;
   }
 
+  .menu__link {
+    font-size: 22px;
+  }
+}
+
+
+@media only screen and (max-width: 1480px) {
   .container {
     max-width: 1240px;
   }
