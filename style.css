@@ -554,7 +554,9 @@ body {
   .section {
     padding-top: 40px;
   }
-
+  .section__title {
+    font-size: 60px;
+  }
   .section-banner {
     min-height: 475px;
     padding-top: 75px;
