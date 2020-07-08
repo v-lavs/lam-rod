@@ -61,8 +61,13 @@ jQuery(document).ready(function ($) {
     /**
      * SIMPLE FANSYBOX FOR IMAGES
      */
-    $('.gallery__thumb').fancybox({
-
+    $('[data-fancybox="gallery"]').fancybox({
+        arrows : false,
+        afterLoad: function(instance, current) {
+            if ( instance.group.length > 1 && current.$content ) {
+                current.$content.append('<button class="fancybox-button fancybox-button--arrow_right next" data-fancybox-next><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.11 82"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polyline class="cls-1" points="1 81 21 41.27 1.58 1"/></g></g></svg></button><button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.11 82"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polyline class="cls-1" points="1 81 21 41.27 1.58 1"/></g></g></svg></button>');
+            }
+        }
     });
 
 
