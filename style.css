@@ -706,11 +706,15 @@ body {
     top: 0.5rem;
   }
 
-
   .section__title {
     font-size: 1.75rem;
+    text-align: center;
   }
-
+  .section__title:before {
+    position: static;
+    display: inline-block;
+    margin-right: 15px;
+  }
   .content-with-gallery {
     padding-left: 0;
   }
@@ -727,6 +731,18 @@ body {
 
   .gallery {
     width: 100%;
+  }
+
+  .step-work__item {
+    text-align: center;
+  }
+
+  .step-work__item .decor:before {
+    display: none;
+  }
+
+  .step-work__item .wrap-icon {
+    background-position: center center;
   }
 }
 
