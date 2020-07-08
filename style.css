@@ -309,6 +309,11 @@ body {
 
 .gallery-list {
   position: relative;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
 }
 
 .gallery__thumb {
@@ -393,12 +398,16 @@ body {
 
 .wrap-icon {
   width: 100%;
+}
+
+.icon {
+  width: 80%;
+  padding-top: 80%;
   background-position: 0 0;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: 100%;
+  background-size: 100%;
   margin-bottom: 10px;
-  min-height: 6.5rem;
 }
 
 .section-what-is {
@@ -553,6 +562,11 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  .step-work__item .decor:before {
+    right: -50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media only screen and (max-width: 1660px) {
@@ -601,6 +615,14 @@ body {
     top: 50%;
   }
 
+  .icon {
+    width: 100%;
+    padding-top: 100%;
+  }
+  .step-work__item .decor:before {
+    transform: translate(50%, -50%);
+  }
+
   .link-mail {
     margin-bottom: 35px;
     font-size: 45px;
@@ -615,6 +637,7 @@ body {
   .header__logo {
     width: 8rem;
   }
+
   .main-nav {
     padding-top: 120px;
     position: fixed;
@@ -692,6 +715,9 @@ body {
     margin-left: 0;
     justify-content: center;
   }
+  .step-work__item .decor:before {
+    transform: translate(-50%, -50%);
+  }
 }
 
 
@@ -699,9 +725,11 @@ body {
   .container {
     max-width: 700px;
   }
+
   .section-banner:before {
     display: none;
   }
+
   .section {
     padding-left: 0;
   }
@@ -719,11 +747,13 @@ body {
     font-size: 1.75rem;
     text-align: center;
   }
+
   .section__title:before {
     position: static;
     display: inline-block;
     margin-right: 15px;
   }
+
   .content-with-gallery {
     padding-left: 0;
   }
@@ -731,11 +761,11 @@ body {
   .gallery,
   .gallery-list {
     position: static;
-    -webkit-transform: none!important;
-    -moz-transform: none!important;
-    -ms-transform: none!important;
-    -o-transform: none!important;
-    transform: none!important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
   }
 
   .gallery {
@@ -760,6 +790,7 @@ body {
   body {
     font-size: 14px;
   }
+
   .container {
     max-width: 80%;
     padding-left: 15px;
@@ -771,13 +802,16 @@ body {
   .container {
     max-width: 90%;
   }
+
   .projects-list__item {
     width: 100%;
   }
+
   .step-work__item {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .step-work__item .decor:before {
     right: 12px;
   }

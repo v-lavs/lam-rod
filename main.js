@@ -58,6 +58,7 @@ jQuery(document).ready(function ($) {
     smoothScrollToAnchor('#requestDemo');
     smoothScrollToAnchor('.header .menu__link');
 
+
     /**
      * SIMPLE FANSYBOX FOR IMAGES
      */
