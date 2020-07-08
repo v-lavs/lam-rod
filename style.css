@@ -619,6 +619,7 @@ body {
     width: 100%;
     padding-top: 100%;
   }
+
   .step-work__item .decor:before {
     transform: translate(50%, -50%);
   }
@@ -715,6 +716,7 @@ body {
     margin-left: 0;
     justify-content: center;
   }
+
   .step-work__item .decor:before {
     transform: translate(-50%, -50%);
   }
@@ -800,6 +802,12 @@ body {
     max-width: 90%;
   }
 
+  .icon {
+    width: 80%;
+    padding-top: 85%;
+    margin: 0 auto;
+  }
+
   .projects-list__item {
     width: 100%;
   }
@@ -818,14 +826,17 @@ body {
   .container {
     max-width: 100%;
   }
-  .section__title{
+
+  .section__title {
     font-size: 1.25rem;
   }
+
   .link-mail {
     margin-bottom: 1.15rem;
     font-size: 1.15rem;
   }
-  .dynamic-content h3{
+
+  .dynamic-content h3 {
     font-size: 16px;
   }
 }
