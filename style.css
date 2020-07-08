@@ -148,7 +148,7 @@ body {
 }
 
 .section {
-  padding-left: 18%;
+  padding-left: 14%;
   padding-right: 12.75%;
   padding-top: 2.75rem;
 }
@@ -401,8 +401,8 @@ body {
 }
 
 .icon {
-  width: 80%;
-  padding-top: 80%;
+  width: 75%;
+  padding-top: 75%;
   background-position: 0 0;
   background-repeat: no-repeat;
   -webkit-background-size: 100%;
@@ -821,10 +821,6 @@ body {
 
   .step-work__item .decor:before {
     right: 12px;
-  }
-  .footer {
-    padding-top: 35px;
-    padding-bottom: 35px;
   }
 }
 
