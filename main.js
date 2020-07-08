@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
         jQuery('.backdrop').fadeIn();
     });
 
-    $('.btn-close, .backdrop').click(function(e) {
+    $('.btn-close, .backdrop, .menu__link').click(function(e) {
         e.preventDefault();
         nav.removeClass('open');
         jQuery('.backdrop').fadeOut();
@@ -49,7 +49,7 @@ jQuery(document).ready(function ($) {
                 event.preventDefault();
 
                 $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top - 150
+                    scrollTop: $($.attr(this, 'href')).offset().top - 50
                 }, 2000);
             }
         });
@@ -57,7 +57,6 @@ jQuery(document).ready(function ($) {
 
     smoothScrollToAnchor('#requestDemo');
     smoothScrollToAnchor('.header .menu__link');
-
 
     /**
      * SIMPLE FANSYBOX FOR IMAGES
