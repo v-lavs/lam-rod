@@ -690,7 +690,9 @@ body {
   .container {
     max-width: 700px;
   }
-
+  .section-banner:before {
+    display: none;
+  }
   .section {
     padding-left: 0;
   }
