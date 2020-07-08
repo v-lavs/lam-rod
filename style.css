@@ -191,14 +191,14 @@ body {
   padding-top: 70px;
   padding-bottom: 60px;
   z-index: 999;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .9);
   transition: .5s ease-out;
 }
 
 .header_active {
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: 0 18px 17px 0 rgba(255, 255, 255, .8);
+  box-shadow: 0 18px 17px 0 rgba(255, 255, 255, .9);
   transition: .5s ease-out;
 
 }
