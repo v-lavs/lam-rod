@@ -33,6 +33,8 @@
   max-height: 90%;
   margin: auto;
   display: flex;
+  border-radius: 10px;
+  overflow: hidden;
   z-index: 5;
 }
 
@@ -190,5 +192,21 @@
   .ls-details {
     width: 100%;
     min-height: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ls-arrow {
+    width: 35px;
+  }
+  .ls-arrow:before {
+    width: 12px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .ls-content {
+    height: 32vh;
   }
 }
