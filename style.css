@@ -516,25 +516,6 @@ body {
   z-index: 10;
 }
 
-/*POPUP GALLERY*/
-
-.fancybox-button {
-  position: absolute;
-  width: 70px;
-  height: 100%;
-  padding: 24px;
-  background-color: #000000;
-  opacity: .3;
-}
-
-.fancybox-button--arrow_right {
-  right: 0;
-}
-
-.fancybox-button--arrow_left {
-  transform: rotate(180deg);
-}
-
 /*===============RESPONSIVE=========================================*/
 @media only screen and (max-width: 1880px) {
   body {
