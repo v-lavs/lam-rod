@@ -185,4 +185,10 @@ jQuery(document).ready(function ($) {
         infoSelector: '.project-info'
     });
 
+
+      var fadeInBlocks = $('.fade-in').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    }, {
+        offset: '80%'
+    });
 });
