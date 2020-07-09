@@ -554,6 +554,10 @@ body {
     border-width: 14px 0 14px 25.7px;
   }
 
+  .section {
+    padding-left: 18%;
+  }
+
   .section__title {
     font-size: 3.25rem;
   }
@@ -801,9 +805,11 @@ body {
   .container {
     max-width: 90%;
   }
-.main{
-  padding-top: 6.43rem;
-}
+
+  .main {
+    padding-top: 6.43rem;
+  }
+
   .icon {
     width: 80%;
     padding-top: 85%;
@@ -838,6 +844,7 @@ body {
     margin-bottom: 1.15rem;
     font-size: 1.15rem;
   }
+
   .section-banner {
     padding-top: 4rem;
     padding-bottom: 4rem;
