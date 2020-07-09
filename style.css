@@ -511,8 +511,21 @@ body {
   background: linear-gradient(0deg, #ffffff 13%, rgba(0, 0, 0, 0) 100%);
   z-index: 10;
 }
+/*POPUP GALLERY*/
 
-
+.fancybox-button{
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  padding: 24px;
+  opacity: .5;
+}
+.fancybox-button--arrow_left{
+  right: 0!important;
+}
+.fancybox-button--arrow_right{
+  transform: rotate(180deg);
+}
 /*===============RESPONSIVE=========================================*/
 @media only screen and (max-width: 1880px) {
   body {
@@ -582,7 +595,6 @@ body {
     font-size: 22px;
   }
 }
-
 
 @media only screen and (max-width: 1480px) {
   .container {
@@ -726,7 +738,6 @@ body {
   }
 }
 
-
 @media only screen and (max-width: 940px) {
   .container {
     max-width: 700px;
@@ -787,7 +798,6 @@ body {
     background-position: center center;
   }
 }
-
 
 @media only screen and (max-width: 767px) {
   body {
