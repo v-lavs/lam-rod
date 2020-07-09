@@ -56,7 +56,7 @@ jQuery(document).ready(function ($) {
     }
 
     smoothScrollToAnchor('#requestDemo');
-    smoothScrollToAnchor('.header .menu__link');
+    smoothScrollToAnchor('.menu__link');
 
 
     /**
@@ -70,6 +70,29 @@ jQuery(document).ready(function ($) {
             }
         }
     });
+
+
+        // // var type = 'image';
+        // // if ($item.hasClass('magnific-youtube')) {
+        // //     type = 'iframe';
+        // // }
+        // $('.gallery-list').magnificPopup({
+        //     delegate: 'a',
+        //     type : 'image',
+        //     gallery: {
+        //         enabled: true,
+        //         navigateByImgClick: true,
+        //         preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+        //         arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.11 82"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polyline class="cls-1" points="1 81 21 41.27 1.58 1"/></g></g></svg></button>', // markup of an arrow button
+        //     },
+        //     callbacks: {
+        //
+        //         buildControls: function() {
+        //             // re-appends controls inside the main container
+        //             this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+        //         }
+        //    },
+        // });
 
 
     /**
@@ -88,4 +111,5 @@ jQuery(document).ready(function ($) {
 
         $galleryStrip.css({transform: 'translate3d(0,'+ offsetY +'px , 0)'});
     });
+
 });

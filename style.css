@@ -518,14 +518,51 @@ body {
   width: 70px;
   height: 100%;
   padding: 24px;
-  opacity: .5;
-}
-.fancybox-button--arrow_left{
-  right: 0!important;
+  background-color: #000000;
+  opacity: .3;
 }
 .fancybox-button--arrow_right{
+  right: 0;
+}
+.fancybox-button--arrow_left{
   transform: rotate(180deg);
 }
+/*MANIFIC-POPUP*/
+
+/*.mfp-figure {*/
+  /*width: 60.4rem;*/
+  /*height: 600px;*/
+/*}*/
+
+/*img.mfp-img {*/
+  /*width: 100%;*/
+/*}*/
+/*button.mfp-arrow{*/
+  /*width: 70px;*/
+  /*height: 102%;*/
+  /*background-color: #000000;*/
+  /*opacity: .3;*/
+  /*margin-top: 46px;*/
+  /*transform: translateY(-50%);*/
+/*}*/
+/*.mfp-arrow:before,*/
+/*.mfp-arrow:after{*/
+  /*display: none;*/
+/*}*/
+
+/*.mfp-arrow svg{*/
+  /*stroke:#ffffff;*/
+  /*width: 23px;*/
+  /*height: 82px;*/
+/*}*/
+
+/*.mfp-arrow-left{*/
+/*transform: rotate(180deg);*/
+/*}*/
+
+/*.mfp-arrow-right{*/
+
+/*}*/
 /*===============RESPONSIVE=========================================*/
 @media only screen and (max-width: 1880px) {
   body {
