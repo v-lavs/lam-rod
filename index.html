@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LAM-rod</title>
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="lightbox.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -218,7 +219,9 @@
                     <h2 class="section__title decor">Основные реализованные проекты</h2>
                     <ul class="projects-list">
                         <li class="projects-list__item">
-                            <a href="assets/img/caluga.jpg" data-lightbox="projects-gallery" class="card-project">
+                            <a href="assets/img/caluga.jpg"
+                               data-slides='["assets/img/caluga.jpg","assets/img/balachna.jpg"]'
+                               data-lightbox="projects-gallery" class="card-project">
                                 <div class="wrap-img">
                                     <img src="assets/img/caluga.jpg" alt="Калуга" class="card-project__img">
                                 </div>
@@ -270,6 +273,7 @@
                     <ul class="projects-list">
                         <li class="projects-list__item">
                             <a href="assets/img/volgodonsk.jpg" data-lightbox="gallery-projects-progress"
+                               data-slides='["assets/img/volgodonsk.jpg","assets/img/new-york.jpg"]'
                                class="card-project">
                                 <div class="wrap-img">
                                     <img src="assets/img/volgodonsk.jpg" alt="Волгодонск" class="card-project__img">
@@ -289,6 +293,7 @@
                         </li>
                         <li class="projects-list__item">
                             <a href="assets/img/new-york.jpg" data-lightbox="gallery-projects-progress"
+                               data-slides='["assets/img/volgodonsk.jpg","assets/img/new-york.jpg"]'
                                class="card-project">
                                 <div class="wrap-img">
                                     <img src="assets/img/new-york.jpg" alt="Нью-Йорк" class="card-project__img">
@@ -546,12 +551,11 @@
     <div class="ls-lightbox" id="gallery">
         <div class="ls-content-wrap">
             <div class="ls-content">
-                <div class="ls-content-slide"></div>
+                <div class="ls-content-slide" style="display: none;"></div>
 
                 <div class="ls-arrow ls-prev"></div>
                 <div class="ls-arrow ls-next"></div>
             </div>
-            <div class="ls-details"></div>
         </div>
     </div>
 
@@ -559,9 +563,6 @@
         <div class="ls-content-wrap">
             <div class="ls-content">
                 <div class="ls-content-slide"></div>
-
-                <div class="ls-arrow ls-prev"></div>
-                <div class="ls-arrow ls-next"></div>
             </div>
             <div class="ls-details"></div>
         </div>
@@ -571,9 +572,6 @@
         <div class="ls-content-wrap">
             <div class="ls-content">
                 <div class="ls-content-slide"></div>
-
-                <div class="ls-arrow ls-prev"></div>
-                <div class="ls-arrow ls-next"></div>
             </div>
             <div class="ls-details"></div>
         </div>
@@ -581,6 +579,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="lib/waypoints/index.js"></script>
 <script src="main.js"></script>
 </body>
