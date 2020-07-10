@@ -76,10 +76,9 @@ jQuery(document).ready(function ($) {
             var offsetY = 0;
 
             if (boundingGalleryTop < 0) {
-                var newOffset = (galleryStripHeight - $(window).height()) * ratio;
+                var newOffset = galleryStripHeight * ratio;
                 var thresholdOffset = galleryStripHeight - contentHeight;
-                // offsetY = newOffset >= thresholdOffset ? thresholdOffset : newOffset;
-                offsetY = newOffset
+                offsetY = newOffset >= thresholdOffset ? thresholdOffset : newOffset;
             }
 
             $galleryStrip.css({transform: 'translate3d(0,' + -offsetY + 'px , 0)'});
@@ -203,10 +202,12 @@ jQuery(document).ready(function ($) {
         infoSelector: '.project-info'
     });
 
-
+      // ANIMATION
       var fadeInBlocks = $('.fade-in').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
         offset: '75%'
     });
+
+
 });

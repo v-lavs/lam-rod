@@ -391,7 +391,7 @@ body {
   top: 50%;
   transform: translateY(-50%) rotate(0deg);;
   z-index: 5;
-  animation: zoomIn  1.35s ease-in-out;
+  animation: zoomIn  1s ease-in-out;
 }
 
 @keyframes zoomIn {
@@ -569,14 +569,15 @@ body {
 /*--------ANIMATION---------*/
 
 .fade-in {
+  /*transition: .45s;*/
   opacity: 0;
 }
 
 .fade-in.active {
-  animation: fadeIn ease-in 0.4s forwards;
-  -webkit-animation: fadeIn ease-in 0.4s forwards;
-  -moz-animation: fadeIn ease-in 0.4s forwards;
-  -ms-animation: fadeIn ease-in 0.4s forwards;
+  animation: fadeIn ease-in 0.6s forwards;
+  -webkit-animation: fadeIn ease-in 0.6s forwards;
+  -moz-animation: fadeIn ease-in 0.6s forwards;
+  -ms-animation: fadeIn ease-in 0.6s forwards;
 }
 
 .fade-in.active:nth-child(1) {
@@ -598,7 +599,7 @@ body {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
