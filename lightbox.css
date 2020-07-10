@@ -149,11 +149,15 @@
 }
 
 /*RESPONSIVE LIGHTBOX*/
-
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1480px) {
   .ls-content-wrap {
     height: 80%;
     max-width: 90%;
+  }
+}
+@media only screen and (max-width: 1380px) {
+  .ls-content-wrap {
+    height: 55%;
   }
 }
 
@@ -170,9 +174,11 @@
     align-items: baseline;
     height: auto;
   }
+
   .ls-content {
     height: 40vh;
   }
+
   .ls-details {
     width: 100%;
     min-height: 0;
@@ -183,6 +189,7 @@
   .ls-content {
     height: 60vh;
   }
+
   .ls-content-wrap {
     flex-wrap: wrap;
     align-items: baseline;
@@ -199,14 +206,23 @@
   .ls-arrow {
     width: 35px;
   }
+
   .ls-arrow:before {
     width: 12px;
     height: 40px;
   }
+  .ls-details {
+    padding-top: 20px;
+
+  }
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
   .ls-content {
     height: 32vh;
+  }
+  .ls-details {
+    padding: 15px;
+
   }
 }
