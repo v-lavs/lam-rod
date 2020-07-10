@@ -58,24 +58,42 @@ jQuery(document).ready(function ($) {
     smoothScrollToAnchor('#requestDemo');
     smoothScrollToAnchor('.menu__link');
 
-
     /**
      * GALLERY PARALLAX
      */
+
     var $contentWrap = $('.content-with-gallery');
     var $galleryWrap = $('.gallery').get(0);
     var $galleryStrip = $('.gallery-list');
 
-    $(document).on('scroll', function () {
-        var contentHeight = $contentWrap.height();
-        var boundingGalleryWrap = $galleryWrap.getBoundingClientRect();
-        var topGalleryOffset = boundingGalleryWrap.top;
-        // var bottomGalleryOffset = topGalleryOffset + boundingGalleryWrap.height;
-        var offsetY = topGalleryOffset < 0 ? topGalleryOffset : 0;
+    function runScroll() {
+        if ($(window).width() >  940) {
+            var contentHeight = $contentWrap.height();
+            var boundingGalleryWrap = $galleryWrap.getBoundingClientRect();
+            var boundingGalleryTop = boundingGalleryWrap.top;
+            var galleryStripHeight = $galleryStrip.height();
+            var ratio = (Math.abs(boundingGalleryTop / contentHeight));
+            var offsetY = 0;
 
-        $galleryStrip.css({transform: 'translate3d(0,' + offsetY + 'px , 0)'});
-    });
+            if (boundingGalleryTop < 0) {
+                var newOffset = (galleryStripHeight - $(window).height()) * ratio;
+                var thresholdOffset = galleryStripHeight - contentHeight;
+                // offsetY = newOffset >= thresholdOffset ? thresholdOffset : newOffset;
+                offsetY = newOffset
+            }
 
+            $galleryStrip.css({transform: 'translate3d(0,' + -offsetY + 'px , 0)'});
+        }
+        else {
+            $galleryStrip.css({transform: 'translate3d(0,0,0)'});
+        }
+    }
+
+    if ($contentWrap.length > 0) {
+        $(document).on('scroll', runScroll);
+    }
+
+    runScroll();
 
     // SIMPLE LIGHTBOX FUNCTION
 
@@ -118,18 +136,18 @@ jQuery(document).ready(function ($) {
             var url = $(node).attr('href');
             var isIframe = $(node).attr('data-embedded');
 
-            if(withInfo) {
+            if (withInfo) {
                 $details.html($(node).find(infoSelector).html());
             }
 
             if (!isIframe && url) {
                 $contentSlide.html('<img class="img-responsive" src="' + url + '"/>');
             } else if (isIframe && url) {
-                $contentSlide.html('<iframe class="ls-iframe" width="560" height="315" src="'+ url +'" frameborder="0" allow="accelerometer autoplay encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                $contentSlide.html('<iframe class="ls-iframe" width="560" height="315" src="' + url + '" frameborder="0" allow="accelerometer autoplay encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
             }
         }
 
-        function closeLightbox (e) {
+        function closeLightbox(e) {
             e.preventDefault();
             $lightbox.fadeOut(animationTime);
 
@@ -139,7 +157,7 @@ jQuery(document).ready(function ($) {
             }, animationTime);
         }
 
-        function showLightbox (e) {
+        function showLightbox(e) {
             e.preventDefault();
             $lightbox.fadeIn(animationTime);
 
@@ -148,8 +166,8 @@ jQuery(document).ready(function ($) {
             insertSlideContent(this);
         }
 
-        function showDescription () {
-            if(contentToClone.length > 0) {
+        function showDescription() {
+            if (contentToClone.length > 0) {
                 withInfo = true;
                 $lightbox.addClass('withInfo');
             } else {
