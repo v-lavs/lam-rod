@@ -389,83 +389,11 @@ body {
   padding-top: 27.25%;
   left: 10.5%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(0deg);;
   z-index: 5;
-  animation: rotateIn  1.5s ease-in-out;
+  animation: zoomIn  1.35s ease-in-out;
 }
 
-
-/*   animate__rotateIn       */
-@keyframes rotateIn {
-  from {
-    transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.rotateIn {
-  animation-name: rotateIn;
-  transform-origin: center;
-}
-
-
-/*animate__backInUp*/
-@keyframes backInUp {
-  0% {
-    transform: translateY(1200px) scale(0.7);
-    opacity: 0.7;
-  }
-
-  80% {
-    transform: translateY(0px) scale(0.7);
-    opacity: 0.7;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.backInUp {
-  animation-name: backInUp;
-}
-
-/*animate__heartBeat*/
-@keyframes heartBeat {
-  0% {
-    transform: scale(1);
-  }
-
-  14% {
-    transform: scale(1.3);
-  }
-
-  28% {
-    transform: scale(1);
-  }
-
-  42% {
-    transform: scale(1.3);
-  }
-
-  70% {
-    transform: scale(1);
-  }
-}
-
-.heartBeat {
-  animation-name: heartBeat;
-  animation-duration: calc(0.5s * 1.3);
-  animation-timing-function: ease-in-out;
-}
-
-/*!*    animate__zoomIn      *!*/
 @keyframes zoomIn {
   from {
     opacity: 0;
@@ -477,9 +405,6 @@ body {
   }
 }
 
-.zoomIn {
-  animation-name: zoomIn;
-}
 /*------------------------------------------------*/
 .slogan {
   line-height: 1.4;

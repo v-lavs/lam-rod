@@ -189,6 +189,6 @@ jQuery(document).ready(function ($) {
       var fadeInBlocks = $('.fade-in').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
-        offset: '80%'
+        offset: '75%'
     });
 });
