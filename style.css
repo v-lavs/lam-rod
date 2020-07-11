@@ -199,13 +199,12 @@ body {
   padding-top: 70px;
   padding-bottom: 60px;
   z-index: 999;
-  background-color: rgba(255, 255, 255, .9);
+  background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
   transition: .5s ease-out;
 }
 
 .header_active {
   padding-top: 20px;
-  background: linear-gradient(rgba(255, 255, 255, 1) 30%,rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%);
   transition: .5s ease-out;
 }
 
