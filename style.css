@@ -205,8 +205,7 @@ body {
 
 .header_active {
   padding-top: 20px;
-  padding-bottom: 20px;
-  box-shadow: 0 18px 17px 0 rgba(255, 255, 255, .9);
+  background: linear-gradient(rgba(255, 255, 255, 1) 30%,rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%);
   transition: .5s ease-out;
 }
 
@@ -261,7 +260,7 @@ body {
 }
 
 .menu__item {
-  margin-left: 50px;
+  margin-left: 32px;
   display: inline-block;
 }
 
@@ -275,12 +274,14 @@ body {
   font-size: 32px;
   font-weight: 400;
   color: #00bdf2;
+  padding: 3px 9px;
+  border: 1px dashed transparent;
   transition: .35s;
 }
 
 .menu__link:hover,
 .menu__link:focus {
-  text-decoration: underline;
+border-color: rgba(0, 189, 242, .5);
   transition: .35s;
 }
 
@@ -641,7 +642,7 @@ body {
   }
 
   .menu__item {
-    margin-left: 30px;
+    margin-left: 12px;
   }
 
   .menu__link {
